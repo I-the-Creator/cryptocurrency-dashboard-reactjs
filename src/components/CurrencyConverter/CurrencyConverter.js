@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import ExchangeRate from "../ExchangeRate/ExchangeRate";
 
@@ -6,8 +6,15 @@ const CurrencyConverter = () => {
   const currencies = ["BTC", "ETH", "USD", "XRP", "LTC", "ADA", 'RUB'];
   const [chosenPrimaryCurrency, setChosenPrimaryCurrency] = useState("BTC");
   const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState("USD");
+  // const [exchangeRate, setExchangeRate] = useState(0);
+  // const [primaryCurrencyExchanged, setPrimaryCurrencyExchanged] = useState("BTC");
+  // const [secondaryCurrencyExchanged, setSecondaryCurrencyExchanged] = useState("USD");
+  const [exchangedData, setExchangedData] = useState({
+    primaryCurrency: 'BTC',
+    secondaryCurrency: 'USD',
+    exchangeRate: 0
+  })
   const [amount, setAmount] = useState(1);
-  const [exchangeRate, setExchangeRate] = useState(0);
   const [result, setResult] = useState(0);
 
   //   console.log(chosenPrimaryCurrency);
@@ -25,7 +32,7 @@ const CurrencyConverter = () => {
       },
       headers: {
         "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
-        "x-rapidapi-key": "6bd18638c3msh29830a13c89e1e2p102e49jsndb17686fe719",
+        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
       },
     };
 
@@ -34,8 +41,15 @@ const CurrencyConverter = () => {
       .then((response) => {
         // console.log(response.data);
         let exchangeRate =response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"];
-        setExchangeRate(exchangeRate);
+        // setExchangeRate(exchangeRate);
         setResult(exchangeRate * amount);
+        // setPrimaryCurrencyExchanged(chosenPrimaryCurrency);
+        // setSecondaryCurrencyExchanged(chosenSecondaryCurrency);
+        setExchangedData({
+          primaryCurrency: chosenPrimaryCurrency,
+          secondaryCurrency: chosenSecondaryCurrency,
+          exchangeRate: exchangeRate
+        })
       })
       .catch((error) => {
         console.error(error);
@@ -46,7 +60,7 @@ const CurrencyConverter = () => {
 
   return (
     <div className="currency-converter">
-      <h2>CurrencyConverter</h2>
+      <h2>Currency Converter</h2>
       <div className="input-box">
         <table>
           <tbody>
@@ -107,7 +121,9 @@ const CurrencyConverter = () => {
         </button>
       </div>
 
-      <ExchangeRate />
+      <ExchangeRate 
+        exchangedData={exchangedData}
+      />
     </div>
   );
 };
