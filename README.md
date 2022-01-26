@@ -13,7 +13,7 @@
 [RapidAPI - Crypto News](https://rapidapi.com/alphavantage/api/alpha-vantage/) - for getting exchange rates
 
 ## 
-**Thanks to [@kubowania](https://github.com/kubowania) for idea & tutorial**
+**I thank [@kubowania](https://github.com/kubowania) for idea & tutorial**
 
 ##
 # Getting Started with Create React App
