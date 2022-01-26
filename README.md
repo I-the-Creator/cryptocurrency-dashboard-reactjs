@@ -1,4 +1,4 @@
-# Crypto Cureency Dashboard - React App
+# Crypto Currency Dashboard - React App
 
 ## Technologies used:
 - React JS
