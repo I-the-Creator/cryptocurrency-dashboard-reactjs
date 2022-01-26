@@ -9,6 +9,7 @@
 
 ## API used:
 [RapidAPI - Crypto News](https://rapidapi.com/ddeshon/api/crypto-news-live3/) - for getting News
+
 [RapidAPI - Crypto News](https://rapidapi.com/alphavantage/api/alpha-vantage/) - for getting exchange rates
 
 **Thanks to [@kubowania](https://github.com/kubowania) for idea & tutorial**
