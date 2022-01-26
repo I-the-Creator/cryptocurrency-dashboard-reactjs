@@ -1,3 +1,19 @@
+# Crypto Cureency Dashboard - React App
+
+## Technologies used:
+- React JS
+
+## ```npm``` libraries/packages used:
+- axios
+- create-react-app
+
+## API used:
+[RapidAPI - Crypto News](https://rapidapi.com/ddeshon/api/crypto-news-live3/) - for getting News
+[RapidAPI - Crypto News](https://rapidapi.com/alphavantage/api/alpha-vantage/) - for getting exchange rates
+
+**Thanks to [@kubowania](https://github.com/kubowania) for idea & tutorial**
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
