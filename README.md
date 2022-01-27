@@ -20,8 +20,9 @@ Backend Express server added to secure environment variable.
 [RapidAPI - Crypto News](https://rapidapi.com/alphavantage/api/alpha-vantage/) - for getting exchange rates.
 
 ## 
-**I thank [@kubowania](https://github.com/kubowania) for idea & tutorial**
+**I thank [@kubowania](https://github.com/kubowania) for idea & tutorial**\
 
+## Dashboard View
 ![this is what the dashbord looks like](assets/dashboard_view.jpg)
 
 ##
