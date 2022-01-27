@@ -22,6 +22,8 @@ Backend Express server added to secure environment variable.
 ## 
 **I thank [@kubowania](https://github.com/kubowania) for idea & tutorial**
 
+![this is what the dashbord looks like](assets/dashboard_view.jpg)
+
 ##
 
 # Getting Started with Create React App
