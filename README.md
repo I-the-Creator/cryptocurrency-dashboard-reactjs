@@ -1,6 +1,6 @@
 # Crypto Currency Dashboard - React App
-This is the Crypto Currency Dashboard prototype based on request to third party APIs. 
-Frontend created using ReactJS.
+This is the Crypto Currency Dashboard prototype based on request to third party APIs.\
+Frontend created using ReactJS.\
 Backend Express server added to secure environment variable.
 
 ## Technologies used:
@@ -16,8 +16,7 @@ Backend Express server added to secure environment variable.
 - create-react-app
 
 ## API used:
-[RapidAPI - Crypto News](https://rapidapi.com/ddeshon/api/crypto-news-live3/) - for getting News
-
+[RapidAPI - Crypto News](https://rapidapi.com/ddeshon/api/crypto-news-live3/) - for getting News.\
 [RapidAPI - Crypto News](https://rapidapi.com/alphavantage/api/alpha-vantage/) - for getting exchange rates
 
 ## 
@@ -42,7 +41,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm run start:backend`
-Runs the express server 
+Runs the express server.\
 Open [http://localhost:8000](http://localhost:8000) to check if all good, up and running
 
 ### `npm test`
