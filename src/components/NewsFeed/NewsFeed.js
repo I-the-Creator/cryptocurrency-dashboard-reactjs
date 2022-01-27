@@ -4,14 +4,11 @@ import { useEffect, useState } from "react";
 const NewsFeed = () => {
   const [articles, setArticles] = useState();
 
+  // Request to backend
   useEffect(() => {
     const options = {
       method: "GET",
-      url: "https://crypto-news-live3.p.rapidapi.com/news",
-      headers: {
-        "x-rapidapi-host": "crypto-news-live3.p.rapidapi.com",
-        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
-      },
+      url: "http://localhost:8000/news",
     };
 
     axios
